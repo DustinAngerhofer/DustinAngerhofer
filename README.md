@@ -16,4 +16,8 @@ I am a Master's student in mathematics with four years of research and scientifi
 -**Successive-Rank Neural Networks**
 
 In this project, we essentially perform Low-Rank Adaptation (LoRA), but without a pretrained model. That is, we start with a model whose weights are all rank-1 matrices, freeze the weights after training, inject a rank-1 update, and repeat. Inspired by the Singular Value Decomposition (SVD), the "singular vectors" comprising each rank-1 update are constrained to being orthogonal to those of all other updates, past and future. The idea is that, like the SVD, the model will learn the most important features in the first few ranks. In addition, these most important features are easily identified.
-[https://github.com/DustinAngerhofer/Successive-Rank-Neural-Networks]
+Repo link: https://github.com/DustinAngerhofer/Successive-Rank-Neural-Networks
+
+-**Decoding Hidden Markov Models with Self-Attention Layers and Transformer Blocks**
+
+The task at hand is to use a self-attention layer to predict the hidden states of a Hidden Markov Model (HMM) given the sequence of observed states. Our HMMs consist of k-ary Markov chains as the hidden states, and k-ary sequences as the observed states. What we find in practice is that both a single self-attention layer and a single transformer block get stuck in the naive solution. With a large enough embedding dimension, they seem to eventually find their way out. Repo link: https://github.com/DustinAngerhofer/HMM-Transformers
